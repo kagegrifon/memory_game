@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic');
+
+/* BEGIN common style */
+
+body {
+    background-color: green;
+    font-family: 'OpenSans-Bold', sans-serif;
+    
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+}
+
+.base-container {
+    width: 700px;
+    margin: 0 auto;   
+}
+
+.button {
+    width: 144px;
+    height: 42px;
+    
+    border-radius: 4px;
+    opacity: 0.85;
+    background: #ffffff;
+    border: none;
+    
+    font-family: 'OpenSans-Bold', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    color: #1C7430; 
+    
+    outline: none;
+}
+
+.button:active {
+    box-shadow: inset 0 0 15px 0 rgba(50,50,50, 0.5);
+}
+
+/* END common style */
+
+
+
+
+
+/* BEGIN start window & result window style */
+
+.start-window {
+    display: block;
+    margin-top: 90px;
+}
+
+.result-window {
+    display: none;
+    margin-top: 90px;
+}
+
+.vertical-flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.decor-image {
+    width: 100%;
+    height: 262px;
+
+    background-position: center -50%;
+    background-repeat: no-repeat;
+}
+
+.start-game-image {  
+    background-image: url(../img/StartGame.png);
+}
+
+.result-game-image {  
+    background-image: url(../img/ResultGame.png);
+}
+
+.top-line {
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 5px 0;
+}
+
+.start-headline {
+    line-height: 38px;
+    font-size: 28px;
+    color: #ffffff;
+    letter-spacing: 0.2px;
+    text-align: center;
+    
+    opacity: 0.85;
+}
+
+.result-headline {
+    font-size: 24px;
+    color: #fff;
+    letter-spacing: 0.15px;
+    line-height: 35px;
+    text-align: center;
+    
+    opacity: 0.85;
+}
+
+/* END start window & result window style */
+
+
+
+
+
+/* BEGIN game window style */
+
+.game-window {
+    display: none;
+    margin-top: 40px;
+}
+
+.button-in-game {
+    height: 14px;
+    padding: 0;
+    
+    font-family: "OpenSans-Semibold", sans-serif;
+    border: none;
+    background: none;
+    font-size: 14px;
+    color: #fff;
+    
+    opacity: 0.8;
+    outline: none;
+    
+    transition: all 0.3s;
+}
+
+.button-in-game:hover {
+    opacity: 0.5;    
+}
+
+.button-in-game:active {
+    opacity: 0.3;    
+}
+
+.scores, 
+.notice {
+    margin: 0;
+    padding: 0;
+
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    
+    opacity: 0.8;
+    
+}
+
+.cards-layout {
+    height: 450px;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    
+    list-style: none;
+}
+
+.card {
+    width: 102px;
+    height: 142px;
+    position: relative;
+    
+    transform-style: preserve-3d;
+    
+    transition: all 0.5s;
+}
+
+.card.flip {
+    transform: rotateY(180deg);
+}
+
+.card.disappear {
+    opacity: 0;
+}
+
+.card .card-side {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+	display: block;
+    
+    -webkit-backface-visibility: hidden;    /* для Safari */
+    backface-visibility: hidden;
+}
+
+ .card .backface {
+    transform: rotateY(180deg);
+    border-radius: 10px;
+}
+
+/* END game window style */

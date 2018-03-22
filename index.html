@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="base-container" data-tid="App">
+      
+      <!--   Экран старта игры -->
+       
+        <div class="start-window">
+            <div class="vertical-flex-container">
+                <div class="decor-image start-game-image"></div>
+                <h1 class="start-headline">Memory Game</h1>
+                <button class="button button-start" data-tid="NewGame-startGame">Начать игру</button>
+            </div>
+        </div>
+        
+        
+        <!--   Экран раскладки карт -->
+        
+        <div class="game-window" data-tid="Deck">
+
+            <div class="top-line">
+                <button class="button-in-game button-start" data-tid="Menu-newGame">Начать заново</button>
+                <strong class="notice" id="notice"></strong>
+                <p class="scores">Очки: <span class = "current-scores" id="currentScores" data-tid="Menu-scores">0</span></p>
+            </div>
+
+            <ul class="cards-layout">
+                <li class="card" data-tid="Card">
+                    <img src="" alt="лицевая сторона карты" class="card-side frontface">
+                    <img src="" alt="рубашка карты" class="card-side backface">
+                </li>
+                <li class="card" data-tid="Card">
+                    <img src="" alt="лицевая сторона карты" class="card-side frontface">
+                    <img src="" alt="рубашка карты" class="card-side backface">
+                </li>
+                <li class="card" data-tid="Card">
+                    <img src="" alt="лицевая сторона карты" class="card-side frontface">
+                    <img src="" alt="рубашка карты" class="card-side backface">
+                </li>
+                <li class="card" data-tid="Card">
+                    <img src="" alt="лицевая сторона карты" class="card-side frontface">
+                    <img src="" alt="рубашка карты" class="card-side backface">
+                </li>
+                <li class="card" data-tid="Card">
+                    <img src="" alt="лицевая сторона карты" class="card-side frontface">
+                    <img src="" alt="рубашка карты" class="card-side backface">
+                </li>
+                <li class="card" data-tid="Card">
+                    <img src="" alt="лицевая сторона карты" class="card-side frontface">
+                    <img src="" alt="рубашка карты" class="card-side backface">
+                </li>
+                <li class="card" data-tid="Card">
+                    <img src="" alt="лицевая сторона карты" class="card-side frontface">
+                    <img src="" alt="рубашка карты" class="card-side backface">
+                </li>
+                <li class="card" data-tid="Card">
+                    <img src="" alt="лицевая сторона карты" class="card-side frontface">
+                    <img src="" alt="рубашка карты" class="card-side backface">
+                </li>
+                <li class="card" data-tid="Card">
+                    <img src="" alt="лицевая сторона карты" class="card-side frontface">
+                    <img src="" alt="рубашка карты" class="card-side backface">
+                </li>
+                <li class="card" data-tid="Card">
+                    <img src="" alt="лицевая сторона карты" class="card-side frontface">
+                    <img src="" alt="рубашка карты" class="card-side backface">
+                </li>
+                <li class="card" data-tid="Card">
+                    <img src="" alt="лицевая сторона карты" class="card-side frontface">
+                    <img src="" alt="рубашка карты" class="card-side backface">
+                </li>
+                <li class="card" data-tid="Card">
+                    <img src="" alt="лицевая сторона карты" class="card-side frontface">
+                    <img src="" alt="рубашка карты" class="card-side backface">
+                </li>
+                <li class="card" data-tid="Card">
+                    <img src="" alt="лицевая сторона карты" class="card-side frontface">
+                    <img src="" alt="рубашка карты" class="card-side backface">
+                </li>
+                <li class="card" data-tid="Card">
+                    <img src="" alt="лицевая сторона карты" class="card-side frontface">
+                    <img src="" alt="рубашка карты" class="card-side backface">
+                </li>
+                <li class="card" data-tid="Card">
+                    <img src="" alt="лицевая сторона карты" class="card-side frontface">
+                    <img src="" alt="рубашка карты" class="card-side backface">
+                </li>
+                <li class="card" data-tid="Card">
+                    <img src="" alt="лицевая сторона карты" class="card-side frontface">
+                    <img src="" alt="рубашка карты" class="card-side backface">
+                </li>
+                <li class="card" data-tid="Card">
+                    <img src="" alt="лицевая сторона карты" class="card-side frontface">
+                    <img src="" alt="рубашка карты" class="card-side backface">
+                </li>
+                <li class="card" data-tid="Card">
+                    <img src="" alt="лицевая сторона карты" class="card-side frontface">
+                    <img src="" alt="рубашка карты" class="card-side backface">
+                </li>
+            </ul>
+
+        </div>
+        
+        
+        
+        <!--   Экран подведения итогов -->          
+            
+        <div class="result-window">
+            <div class="vertical-flex-container">
+                <div class="decor-image result-game-image"></div>
+                <h3 class="result-headline">Поздравляем! <br>Ваш итоговый счет: <span class="result-scores" id="resultScores"></span></h3>
+                <button class="button button-start" data-tid="EndGame-retryGame">Еще раз</button>
+            </div>            
+        </div>                   
+                                
+    </div>
+
+
+    <script src="js/cardMap.js"></script>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
